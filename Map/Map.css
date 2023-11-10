@@ -69,7 +69,7 @@
 .MapContainer {
     width: 100%;
     height: 100%;
-    background-color: #2EA0BA;
+    background-color: white;
     overflow: scroll;
 }
 
