@@ -1,0 +1,7 @@
+.Education {
+    background-color: #ffffff;
+    display: flex;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, #67C2B0, #2EA0BA);
+    border-image-slice: 1;
+}
