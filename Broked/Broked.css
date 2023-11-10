@@ -1,0 +1,78 @@
+.MenuBarContainer {
+    width: 100%;
+    height: 2.25rem;
+
+    background-color: #ffffff;
+    
+    flex-direction: row;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, #67C2B0, #2EA0BA);
+    border-image-slice: 1;
+    top: 0rem;
+    position: sticky;
+
+    display: flex;
+    align-items: center;
+}
+
+.MenuBarContainerMiddle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+}
+.MenuBarContainerMiddle::-webkit-scrollbar {
+    display: none;
+}
+
+.MenuBarContainerMiddleCenter{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    background-color: transparent;
+}
+
+/*-------------------------------------------------------------------------------------  */
+
+.MenuBarInput {
+    width: 12.745rem;
+    height: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(217, 217, 217, 0.00);
+    outline: none;
+    padding: 0 0.69rem;
+    background: #F5F5F5;
+
+    display: flex;
+
+    color: #626262;
+    text-align: center;
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.01875rem;
+}
+
+.MenuBarBar {
+    display: flex;
+    stroke-width: 2px;
+    stroke: #D9D9D9;
+    height: 1.5rem;
+
+    margin: 0 0.38rem 0 0.75rem;
+}
+
+.MenuBarCheckBox {
+    display: flex;
+    width: 2.25rem;
+    height: 2.25rem;
+
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
