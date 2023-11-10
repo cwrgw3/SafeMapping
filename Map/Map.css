@@ -77,8 +77,14 @@ a {
 }
 
 .MenuBarContainerMiddle {
-    width: 100%;
+    width: auto;
     height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+.MenuBarContainerMiddle::-webkit-scrollbar {
+    display: none;
 }
 
 .MenuBarContainerMiddleCenter{
@@ -90,5 +96,35 @@ a {
 
 .MenuBarButton {
     border-radius: 0.75rem;
+    border: none;
+    height: 1.5rem;
+    width: 3rem;
+}
+
+.chosed {
     background: linear-gradient(90deg, #67C2B0 0%, #2EA0BA 100%);
+    color: #ffffff;
+}
+
+.unchosed {
+    background: #f5f5f5;
+    color: #000000;
+}
+
+.MenuBarText {
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.01875rem;
+}
+
+.MenuBarBar {
+    margin: 0 1.5rem;
+    width: 0rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+    stroke-width: 2px;
+    stroke: #D9D9D9;
+    
 }
