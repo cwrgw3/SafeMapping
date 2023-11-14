@@ -3,6 +3,11 @@
     padding: 0px;
 }
 
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
 .hide {
     right: 12rem;
 }
@@ -38,6 +43,9 @@
 .SideMenuClose {
     border: none;
     background-color: transparent;
+
+    margin-top: 0.63rem;
+    margin-left: 0.75rem;
 }
 
 .SideMenuDetails {
