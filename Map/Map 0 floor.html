@@ -18,7 +18,7 @@
         <div style="width: 1.5rem;"></div>
         <div class="HeadBarContainerMiddle">    
             <div class="HeadBarContainerMiddleCenter">
-                <a class="HeadBarLogoContainer" href="">
+                <a class="HeadBarLogoContainer" href="../index.html">
                     <img src="SafeMapping.png" alt="safelogo" class="HeadBarLogoImg">
                     <p class="HeadBarLogoName">안전매핑</p>
                 </a>
@@ -40,23 +40,6 @@
         <div style="width: 1.5rem;"></div>
         <div class="MenuBarContainerMiddle">
             <div class="MenuBarContainerMiddleCenter">
-                <button type="button" class="MenuBarButton unchosed">
-                    <p class="MenuBarText">오량홀</p>
-                </button>
-                <div style="width: 0.75rem;"></div>
-                <button type="button" class="MenuBarButton unchosed">
-                    <p class="MenuBarText">본관</p>
-                </button>
-                <div style="width: 0.75rem;"></div>
-                <button type="button" class="MenuBarButton unchosed">
-                    <p class="MenuBarText">신관</p>
-                </button>
-
-                <div class="MenuBarBar">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="26" viewBox="0 0 2 26" fill="none">
-                        <path d="M1 1L0.999999 25" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </div>
                 <button type="button" class="MenuBarButton chosed" onclick="navigateToPage('지상.html')">
                     <a href="Map 0 floor.html"><p class="MenuBarText">지상</p></a>
                 </button>
@@ -108,7 +91,7 @@
 
             <div class="SideMenuDetailsContainer">
                 <a href="">
-                    <button class="SideMenuDetails clickeddetails">
+                    <button class="SideMenuDetails">
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                             <path d="M14 8L16.5028 20.2009C16.5982 20.6661 17.0075 21 17.4824 21H18.5176C18.9925 21 19.4018 20.6661 19.4972 20.2009L22 8H14Z" stroke="black" stroke-linecap="round"/>
                             <circle cx="18" cy="25.3333" r="2.16667" stroke="black"/>
@@ -141,7 +124,7 @@
                     </button>
                 </a>
 
-                <a href="">
+                <a href="../Education/Education.html">
                     <button class="SideMenuDetails">
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M20 12V17C20 18.1046 19.1046 19 18 19C16.8954 19 16 18.1046 16 17V12C16 10.8954 16.8954 10 18 10C19.1046 10 20 10.8954 20 12ZM18 11C17.4477 11 17 11.4477 17 12V17C17 17.5523 17.4477 18 18 18C18.5523 18 19 17.5523 19 17V12C19 11.4477 18.5523 11 18 11Z" fill="black"/>
@@ -152,7 +135,7 @@
                     </button>
                 </a>
 
-                <a href="">
+                <a href="../Broked/Broked.html">
                     <button class="SideMenuDetails">
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                             <path d="M16.295 13.292L14.6556 16.5707L9.5 17.8596V9.5H15.7929L13.6464 11.6464L13.0744 12.2185L13.8419 12.4743L16.295 13.292Z" stroke="black"/>
@@ -176,8 +159,10 @@
 
             if (side.style.right == '-13rem') {
                 side.style.right = '0rem';
+                side.style.boxShadow = 'rgba(0,0,0,0.5) 0 0 0 9999px';
             } else {
                 side.style.right = '-13rem';
+                side.style.boxShadow = 'none';
             }
         
         

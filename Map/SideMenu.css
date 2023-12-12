@@ -62,8 +62,9 @@ a {
     align-items: center;
 }
 
-.clickeddetails{
+.SideMenuDetails:hover {
     border: 1px solid #67C2B0;
+    width: calc(100% - 2px);
 }
 
 .unclikeddetails{
