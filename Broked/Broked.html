@@ -217,12 +217,15 @@
 
             if (side.style.right == '-13rem') {
                 side.style.right = '0rem';
+                side.style.boxShadow = 'rgba(0,0,0,0.5) 0 0 0 9999px';
             } else {
                 side.style.right = '-13rem';
-            }
-        
-        
+                side.style.boxShadow = 'none';
+            }       
         }
-    </script>   
+    </script>
+    <script type="module">
+        import { navigateToPage } from './navigation.js';
+    </script> 
 </body>
 </html>
