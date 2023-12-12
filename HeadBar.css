@@ -63,5 +63,15 @@ a {
     display: flex;
 }
 
+.HeadSubTitle {
+    user-select: none;
+    color: #D9D9D9;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.0375rem;
+}
+
 /* ------------------------------------------------------------------------------------------------- */
 
