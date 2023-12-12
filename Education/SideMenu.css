@@ -9,15 +9,19 @@ a {
 }
 
 #hide {
-    right: -13rem;
-    transition: 0.5s;
+    right: 12rem;
+}
+
+.show {
+    right: 0rem;
 }
 
 .SideMenuContainer {
+    width: 100%;
     height: 100%;
 
     position: fixed;
-    top: 0;
+    background: rgba(0, 0, 0, 0.25);
 }
 
 .SideMenuWhite {
@@ -25,7 +29,7 @@ a {
     width: 12rem;
     float: right;
 
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .SideMenuHeadContainer {
@@ -62,9 +66,8 @@ a {
     align-items: center;
 }
 
-.SideMenuDetails:hover {
+.clickeddetails{
     border: 1px solid #67C2B0;
-    width: calc(100% - 2px);
 }
 
 .unclikeddetails{
