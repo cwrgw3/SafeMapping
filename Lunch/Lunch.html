@@ -6,24 +6,22 @@
     <title>안전매핑</title>
     <link rel="shortcut icon" href="SafeLogo.ico" type="image/x-icon">
     <link rel="stylesheet" href="../HeadBar.css">
+    <link rel="stylesheet" href="../Map/Map.css">
     <link rel="stylesheet" href="../SideMenu.css">
-    <link rel="stylesheet" href="../Broked/Broked.css">
-    <link rel="stylesheet" href="Oryang.css">
-    
+    <link rel="stylesheet" href="Lunch.css">
     <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
     <!-- HTML in your document's head -->
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
 <body>
-    <div class="HeadBarContainer Education">
+    <div class="HeadBarContainer">
+        <div style="width: 1.5rem;"></div>
         <div class="HeadBarContainerMiddle">    
             <div class="HeadBarContainerMiddleCenter">
                 <a class="HeadBarLogoContainer" href="../index.html">
                     <img src="SafeMapping.png" alt="safelogo" class="HeadBarLogoImg">
                     <p class="HeadBarLogoName">안전매핑</p>
                 </a>
-                <span class="HeadSubTitle">&nbsp;&nbsp;오량 물건찾기</span>
+                <p class="HeadSubTitle">&nbsp;&nbsp;오늘 급식은 뮘</p>
                 <div class="HeadBarMenuButtonBox">
                     <button type="button" class="HeadBarMenuButton" onclick="sidebar()">
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -35,24 +33,35 @@
                 </div>
             </div>
         </div>
+        <div style="width: 1.5rem;"></div>
     </div>
-    
+
     <div class="MenuBarContainer">
+        <div style="width: 1.5rem;"></div>
         <div class="MenuBarContainerMiddle">
             <div class="MenuBarContainerMiddleCenter">
-                <input class="MenuBarInput" type="text" placeholder="찾고 싶은 물건을 입력하세요">
-                <div class="MenuBarBar">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="26" viewBox="0 0 2 26" fill="none">
-                        <path d="M1 1L0.999999 25" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <button class="MenuBarSearchButton" type="submit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6114 15.8057C21.6114 19.0121 19.0121 21.6114 15.8057 21.6114C12.5993 21.6114 10 19.0121 10 15.8057C10 12.5993 12.5993 10 15.8057 10C19.0121 10 21.6114 12.5993 21.6114 15.8057ZM20.2572 20.9538C19.0639 21.9866 17.5078 22.6114 15.8057 22.6114C12.047 22.6114 9 19.5644 9 15.8057C9 12.047 12.047 9 15.8057 9C19.5644 9 22.6114 12.047 22.6114 15.8057C22.6114 17.5078 21.9866 19.064 20.9537 20.2573C20.9772 20.2737 20.9995 20.2924 21.0204 20.3134L26.8539 26.1468C27.0491 26.3421 27.0491 26.6587 26.8539 26.8539C26.6586 27.0492 26.342 27.0492 26.1468 26.8539L20.3133 21.0205C20.2924 20.9995 20.2737 20.9772 20.2572 20.9538Z" fill="black"/>
-                    </svg>
+                <button type="button" class="MenuBarButton chosed" onclick="navigateToPage('지상.html')" style="width:2rems;">
+                    <a href="#"><p class="MenuBarText">아침</p></a>
                 </button>
+
+                <div style="width: 0.75rem;"></div>
+                <button type="button" class="MenuBarButton unchosed" onclick="navigateToPage('1층.html')" style="width:2rems;">
+                    <a href="#"><p class="MenuBarText">점심</p></a>
+                </button>
+
+                <div style="width: 0.75rem;"></div>
+                <button type="button" class="MenuBarButton unchosed" onclick="navigateToPage('2층.html')" style="width:2rems;">
+                    <a href="#"><p class="MenuBarText">저녁</p></a>
+                </button>
+
+                <div style="width: 0.75rem;"></div>
             </div>
         </div>
+        <div style="width: 1.5rem;"></div>
+    </div>
+
+    <div>
+        
     </div>
 
     <div class="SideMenuContainer " id="hide"> <!--hide-->
@@ -84,7 +93,7 @@
                     </button>
                 </a>
 
-                <a href="../">
+                <a href="../Oryang/Oryang.html">
                     <button class="SideMenuDetails">
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                             <path d="M25 16H11V18C11 19 12 20 13 20H14C14.8742 20 15.9698 19.0143 16.7061 18.2919C16.8955 18.1061 17.1493 18 17.4145 18H18.5855C18.8507 18 19.1046 18.1061 19.2939 18.2919C20.0302 19.0143 21.1258 20 22 20H23C24.2 20 25 19 25 18V16Z" stroke="black" stroke-linecap="round"/>

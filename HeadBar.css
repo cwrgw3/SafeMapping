@@ -24,6 +24,7 @@ a {
     background-color: #ffffff;
     border-bottom: 1px solid #F5F5F5;
     display: flex;
+    flex-direction: row;
 }
 
 .HeadBarContainerMiddle {
