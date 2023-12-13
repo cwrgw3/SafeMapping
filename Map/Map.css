@@ -35,6 +35,7 @@ a {
     align-items: center;
     display: flex;
     background-color: transparent;
+    justify-content: center;
 }
 
 .MenuBarButton {
@@ -46,7 +47,10 @@ a {
 
 .chosed {
     background: linear-gradient(90deg, #67C2B0 0%, #2EA0BA 100%);
-    color: #ffffff;
+}
+
+.chosed > a {
+    color: #ffffff!important;
 }
 
 .unchosed {
