@@ -12,10 +12,11 @@
     
     <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
     <!-- HTML in your document's head -->
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
 <body>
-    <div class="HeadBarContainer">
-        <div style="width: 1.5rem;"></div>
+    <div class="HeadBarContainer Education">
         <div class="HeadBarContainerMiddle">    
             <div class="HeadBarContainerMiddleCenter">
                 <a class="HeadBarLogoContainer" href="../index.html">
@@ -24,7 +25,7 @@
                 </a>
                 <span class="HeadSubTitle">&nbsp;&nbsp;오량 물건찾기</span>
                 <div class="HeadBarMenuButtonBox">
-                    <button  class="HeadBarMenuButton" onclick="sidebar()"> <!--여기-->
+                    <button type="button" class="HeadBarMenuButton" onclick="sidebar()">
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                             <path d="M9 10.5C10.44 10.5 21.6 10.5 27 10.5" stroke="black" stroke-width="1.2" stroke-linecap="round"/>
                             <path d="M9 18C10.44 18 21.6 18 27 18" stroke="black" stroke-width="1.2" stroke-linecap="round"/>
@@ -34,8 +35,7 @@
                 </div>
             </div>
         </div>
-        <div style="width: 1.5rem;"></div>
-    </div>  
+    </div>
     
     <div class="MenuBarContainer">
         <div class="MenuBarContainerMiddle">
@@ -46,16 +46,10 @@
                         <path d="M1 1L0.999999 25" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round"/>
                     </svg>
                 </div>
-                <button class="MenuBarCheckBox" type="button">
+                <button class="MenuBarSearchButton" type="submit">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6114 15.8057C21.6114 19.0121 19.0121 21.6114 15.8057 21.6114C12.5993 21.6114 10 19.0121 10 15.8057C10 12.5993 12.5993 10 15.8057 10C19.0121 10 21.6114 12.5993 21.6114 15.8057ZM20.2572 20.9538C19.0639 21.9866 17.5078 22.6114 15.8057 22.6114C12.047 22.6114 9 19.5644 9 15.8057C9 12.047 12.047 9 15.8057 9C19.5644 9 22.6114 12.047 22.6114 15.8057C22.6114 17.5078 21.9866 19.064 20.9537 20.2573C20.9772 20.2737 20.9995 20.2924 21.0204 20.3134L26.8539 26.1468C27.0491 26.3421 27.0491 26.6587 26.8539 26.8539C26.6586 27.0492 26.342 27.0492 26.1468 26.8539L20.3133 21.0205C20.2924 20.9995 20.2737 20.9772 20.2572 20.9538Z" fill="black"/>
                     </svg>
-                </button>
-                <button class="MenuBarCheckBox" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <path d="M9 27H27" stroke="black" stroke-linecap="round"/>
-                        <path d="M10 21L22 9L25 12L13 24M10 21L9 22V25H12L13 24M10 21L13 24" stroke="black"/>
-                      </svg>
                 </button>
             </div>
         </div>
@@ -90,7 +84,7 @@
                     </button>
                 </a>
 
-                <a href="../Oryang/Oryang.html">
+                <a href="../">
                     <button class="SideMenuDetails">
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                             <path d="M25 16H11V18C11 19 12 20 13 20H14C14.8742 20 15.9698 19.0143 16.7061 18.2919C16.8955 18.1061 17.1493 18 17.4145 18H18.5855C18.8507 18 19.1046 18.1061 19.2939 18.2919C20.0302 19.0143 21.1258 20 22 20H23C24.2 20 25 19 25 18V16Z" stroke="black" stroke-linecap="round"/>
@@ -142,82 +136,7 @@
         </div>
     </div>
 
-    
-    <div style="height: 2.25rem;"></div>
-    <div class="OryangContainer">
-        <div class="OryangPostContainer">
-            <div class="OryangPostImgBox">
-                <img class="length" src="asset/소포 책.jpg">
-            </div>
-            <div class="OryangPostText">
-                <div class="OryangPostUser">
-                    <div class="OryangPostUserImg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                            <circle cx="9" cy="9" r="9" fill="#67C2B0"/>
-                        </svg>    
-                    </div>
-                    <p style="margin-left: 0.13rem;">사용자 명</p>
-                    <div style="margin: 0 0.38rem 0 auto;"><p class="OryangPostDay">2023 11 07</p></div>
-                </div>
-                <div class="OryangPostExplain">
-                    <p class="OryangPostExplainText">멀티 3실</p>
-                    <span style="color: #d9d9d9;">&nbsp;&nbsp;/&nbsp;&nbsp;</span>
-                    <p class="OryangPostExplainText">물병, 보온병</p>
-                </div>
-            </div>
 
-        </div>
-        <div style="height: 2rem;"></div>
-
-        <div class="OryangPostContainer">
-            <div class="OryangPostImgBox">
-                <img class="width" src="asset/음성인식 로봇.jpg">
-            </div>
-            <div class="OryangPostText">
-                <div class="OryangPostUser">
-                    <div class="OryangPostUserImg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                            <circle cx="9" cy="9" r="9" fill="#67C2B0"/>
-                        </svg>    
-                    </div>
-                    <p style="margin-left: 0.13rem;">사용자 명</p>
-                    <div style="margin: 0 0.38rem 0 auto;"><p class="OryangPostDay">2023 11 07</p></div>
-                </div>
-                <div class="OryangPostExplain">
-                    <p class="OryangPostExplainText">멀티 3실</p>
-                    <span style="color: #d9d9d9;">&nbsp;&nbsp;/&nbsp;&nbsp;</span>
-                    <p class="OryangPostExplainText">물병, 보온병</p>
-                </div>
-            </div>
-
-        </div>
-        <div style="height: 2rem;"></div>
-
-        <div class="OryangPostContainer">
-            <div class="OryangPostImgBox">
-                <img class="width" src="asset/아두이노 얼티밋.jpg">
-            </div>
-            <div class="OryangPostText">
-                <div class="OryangPostUser">
-                    <div class="OryangPostUserImg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                            <circle cx="9" cy="9" r="9" fill="#67C2B0"/>
-                        </svg>    
-                    </div>
-                    <p style="margin-left: 0.13rem;">사용자 명</p>
-                    <div style="margin: 0 0.38rem 0 auto;"><p class="OryangPostDay">2023 11 07</p></div>
-                </div>
-                <div class="OryangPostExplain">
-                    <p class="OryangPostExplainText">멀티 3실</p>
-                    <span style="color: #d9d9d9;">&nbsp;&nbsp;/&nbsp;&nbsp;</span>
-                    <p class="OryangPostExplainText">물병, 보온병</p>
-                </div>
-            </div>
-
-        </div>
-        <div style="height: 2rem;"></div>
-    </div>
-    <div style="height: 4rem;"></div>
 
     <script>
         function sidebar() {
