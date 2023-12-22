@@ -22,7 +22,7 @@
     content: "";
     position: absolute;
     right: 21rem;
-    transition: 0.7s;
+    transition: 0.5s;
     z-index: -1;
 }
 
@@ -32,7 +32,7 @@
 
 .Exitbox:hover > .Exittext{
     color: white;
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
 .Exittext {
