@@ -40,7 +40,6 @@
         <div style="width: 1.5rem;"></div>
         <div class="MenuBarContainerMiddle">
             <div class="MenuBarContainerMiddleCenter">
-                <div style="width: 1.5rem;"></div>
                 <button type="button" class="MenuBarButton chosed" style="width: 2.625rem;">
                     <a href="#"><p class="MenuBarText">1 - 1</p></a>
                 </button>
@@ -396,15 +395,13 @@
                 </svg>
             </div>
         </a>
-        <a href="#">
-            <div class="Exitbox" onclick="movetoimg()">
-                <p class="Exittext">2학년 10반에서 대피지도 보러가기</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none"  style="margin-left: auto;">
-                    <path d="M9 18H27" stroke="black" stroke-linecap="round"/>
-                    <path d="M21 24L27 18L21 12" stroke="black" stroke-linecap="round"/>
-                </svg>
-            </div>
-        </a>
+        <div class="Exitbox" onclick="movetoimg()">
+            <p class="Exittext">2학년 10반에서 대피지도 보러가기</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none"  style="margin-left: auto;">
+                <path d="M9 18H27" stroke="black" stroke-linecap="round"/>
+                <path d="M21 24L27 18L21 12" stroke="black" stroke-linecap="round"/>
+            </svg>
+        </div>
     </div>
     <div style="height: 4.25rem;"></div>
 
@@ -412,7 +409,7 @@
         function sidebar() {
             const side = document.getElementById('hide');
 
-            if (side.style.right == '-13rem') {
+            if (side.style.right === '-13rem' || side.style.right === '') {
                 side.style.right = '0rem';
                 side.style.boxShadow = 'rgba(0,0,0,0.5) 0 0 0 9999px';
             } else {
@@ -424,7 +421,7 @@
         function movetoimg() {
             const map = document.getElementById('chosetomap');
 
-            if (map.style.display == 'block') {
+            if (map.style.display === "block" || map.style.display === "") {
                 map.style.display = 'none';
             } else {
                 map.style.display = 'block';
