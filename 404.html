@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>안전매핑</title>
-    <link rel="shortcut icon" href="../SafeMapping.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../HeadBar.css">
-    <link rel="stylesheet" href="Map.css">
-    <link rel="stylesheet" href="../SideMenu.css">
+    <link rel="shortcut icon" href="SafeMapping.ico" type="image/x-icon">
+    <link rel="stylesheet" href="HeadBar.css">
+    <link rel="stylesheet" href="SideMenu.css">
+    <link rel="stylesheet" href="Exit.css">
     <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
     <!-- HTML in your document's head -->
 </head>
 <body>
-    <div class="HeadBarContainer">
+    <div class="HeadBarContainer" style="z-index: 2; border-bottom: 1px solid; border-image: linear-gradient(to right, #67C2B0, #2EA0BA); border-image-slice: 1;">
         <div style="width: 1.5rem;"></div>
         <div class="HeadBarContainerMiddle">    
             <div class="HeadBarContainerMiddleCenter">
                 <a class="HeadBarLogoContainer" href="../index.html">
-                    <img src="../SafeMapping.png" alt="safelogo" class="HeadBarLogoImg">
+                    <img src="SafeMapping.png" alt="safelogo" class="HeadBarLogoImg">
                     <p class="HeadBarLogoName">안전매핑</p>
                 </a>
-                <span class="HeadSubTitle">&nbsp;&nbsp;안전물품 표시지도</span>
+                <p class="HeadSubTitle">&nbsp;&nbsp;404</p>
                 <div class="HeadBarMenuButtonBox">
                     <button type="button" class="HeadBarMenuButton" onclick="sidebar()">
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -35,46 +35,7 @@
         <div style="width: 1.5rem;"></div>
     </div>
 
-    <div class="MenuBarContainer">
-        <div style="width: 1.5rem;"></div>
-        <div class="MenuBarContainerMiddle">
-            <div class="MenuBarContainerMiddleCenter">
-
-                <button type="button" class="MenuBarButton unchosed" onclick="navigateToPage('지상.html')">
-                    <a href="Map0floor.html"><p class="MenuBarText">지상</p></a>
-                </button>
-
-                <div style="width: 0.75rem;"></div>
-                <button type="button" class="MenuBarButton unchosed" onclick="navigateToPage('1층.html')">
-                    <a href="Map1floor.html"><p class="MenuBarText">1층</p></a>
-                </button>
-
-                <div style="width: 0.75rem;"></div>
-                <button type="button" class="MenuBarButton unchosed" onclick="navigateToPage('2층.html')">
-                    <a href="Map2floor.html"><p class="MenuBarText">2층</p></a>
-                </button>
-
-                <div style="width: 0.75rem;"></div>
-                <button type="button" class="MenuBarButton chosed" onclick="navigateToPage('3층.html')">
-                    <a href="Map3floor.html"><p class="MenuBarText">3층</p></a>
-                </button>
-
-                <div style="width: 0.75rem;"></div>
-                <button type="button" class="MenuBarButton unchosed" onclick="navigateToPage('4층.html')"> 
-                    <a href="Map4floor.html"><p class="MenuBarText">4층</p></a>
-                </button>
-
-                <div style="width: 0.75rem;"></div>
-            </div>
-        </div>
-        <div style="width: 1.5rem;"></div>
-    </div>
-
-    <div class="MapContainer">
-        <img src="3층.png" alt="3층" style="height: 100%;">
-    </div>
-
-    <div class="SideMenuContainer " id="hide"> <!--hide--> <!--여기-->
+    <div class="SideMenuContainer " id="hide" style="z-index: 3;">
         <div class="SideMenuWhite"> 
 
             <div class="SideMenuHeadContainer">
@@ -90,7 +51,7 @@
 
 
             <div class="SideMenuDetailsContainer">
-                <a href="../Map/Map0floor.html">
+                <a href="Map/Map0floor.html">
                     <button class="SideMenuDetails">
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                             <path d="M18.5 12C16.0147 12 14 13.9188 14 16.2857V28H23V16.2857C23 13.9188 20.9853 12 18.5 12Z" stroke="black"/>
@@ -103,7 +64,7 @@
                     </button>
                 </a>
 
-                <a href="../Oryang/Oryang.html">
+                <a href="Oryang/Oryang.html">
                     <button class="SideMenuDetails">
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                             <path d="M25 16H11V18C11 19 12 20 13 20H14C14.8742 20 15.9698 19.0143 16.7061 18.2919C16.8955 18.1061 17.1493 18 17.4145 18H18.5855C18.8507 18 19.1046 18.1061 19.2939 18.2919C20.0302 19.0143 21.1258 20 22 20H23C24.2 20 25 19 25 18V16Z" stroke="black" stroke-linecap="round"/>
@@ -114,7 +75,7 @@
                     </button>
                 </a>
 
-                <a href="../Education/Education.html">
+                <a href="Education/Education.html">
                     <button class="SideMenuDetails">
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M20 12V17C20 18.1046 19.1046 19 18 19C16.8954 19 16 18.1046 16 17V12C16 10.8954 16.8954 10 18 10C19.1046 10 20 10.8954 20 12ZM18 11C17.4477 11 17 11.4477 17 12V17C17 17.5523 17.4477 18 18 18C18.5523 18 19 17.5523 19 17V12C19 11.4477 18.5523 11 18 11Z" fill="black"/>
@@ -125,7 +86,7 @@
                     </button>
                 </a>
 
-                <a href="../Broked/Broked.html">
+                <a href="Broked/Broked.html">
                     <button class="SideMenuDetails">
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                             <path d="M16.295 13.292L14.6556 16.5707L9.5 17.8596V9.5H15.7929L13.6464 11.6464L13.0744 12.2185L13.8419 12.4743L16.295 13.292Z" stroke="black"/>
@@ -148,11 +109,11 @@
                             <rect x="9.5" y="17.5" width="7" height="6" rx="1.5" stroke="black"/>
                             <rect x="19.5" y="17.5" width="7" height="6" rx="1.5" stroke="black"/>
                           </svg>
-                        <p class="SideMenuDetailsText">급식 식단표</p>
+                        <p class="SideMenuDetailsText">급식 식단표 </p>
                     </button>
                 </a>
 
-                <a href="../Exit/Exit.html">
+                <a href="Exit/Exit.html">
                     <button class="SideMenuDetails">
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                             <path d="M15.6998 13.3753L12.4998 17.3753C12.2076 17.7405 12.2076 18.2595 12.4998 18.6247L15.6998 22.6247C15.8895 22.8619 16.1768 23 16.4806 23H19.0657C19.4651 23 19.7033 22.5549 19.4818 22.2227L18 20H24V16H18L19.4818 13.7774C19.7033 13.4451 19.4651 13 19.0657 13H16.4806C16.1768 13 15.8895 13.1381 15.6998 13.3753Z" stroke="black"/>
@@ -165,7 +126,8 @@
                 <div style="width: 100%; height: auto;">
                     <a href="https://forms.gle/nMUtrmtweSTePJqF7">
                         <div class="EventBackground">
-                            <p>안전퀴즈<br>(상품증정)</p>
+                            <p> 안전퀴즈<br>(상품증정)</p>
+                            
                         </div>
                     </a>
                 </div>
@@ -173,7 +135,9 @@
         </div>
     </div>
 
+    <div>
 
+    </div>
 
     <script>
         function sidebar() {
@@ -185,16 +149,17 @@
             } else {
                 side.style.right = '-13rem';
                 side.style.boxShadow = 'none';
-            }       
-        
+            }        
         }
-    </script>
-    <script type="module">
-        import { navigateToPage } from './navigation.js';
 
-        // 이벤트 리스너는 HTML 파일에 그대로 남아 있을 수 있습니다.
-        function navigateToPage(page) {
-            window.location.href = page;
+        function movetoimg() {
+            const map = document.getElementById('chosetomap');
+
+            if (map.style.display === "block" || map.style.display === "") {
+                map.style.display = 'none';
+            } else {
+                map.style.display = 'block';
+            }
         }
     </script>
 </body>
